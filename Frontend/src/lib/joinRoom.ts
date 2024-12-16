@@ -1,11 +1,10 @@
-
 import { Bounce, toast } from "react-toastify";
 
 export function joinRoom(
   ws: WebSocket | null,
   username: string,
   roomid: string,
-  setCon: (con: boolean) => void
+  setCon: (con: boolean) => void,
 ) {
   if (roomid == "") {
     toast.error("Please enter a room id", {
