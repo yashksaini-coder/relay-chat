@@ -22,7 +22,7 @@ function App() {
     }
 
     useEffect(() => {
-        const wsUrl = import.meta.env.BACKEND_URL || "ws://localhost:8080";
+        const wsUrl = import.meta.env.VITE_BACKEND_URL;
         if (!wsUrl) {
             console.error("WebSocket URL is not defined");
             return;
