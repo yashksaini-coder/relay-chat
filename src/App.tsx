@@ -22,7 +22,8 @@ function App() {
     }
 
     useEffect(() => {
-        const wsUrl = import.meta.env.VITE_BACKEND_URL;
+        // const wsUrl = import.meta.env.VITE_BACKEND_URL;
+        const wsUrl = "https://relay-chat-backend.onrender.com/";
         if (!wsUrl) {
             console.error("WebSocket URL is not defined");
             return;
